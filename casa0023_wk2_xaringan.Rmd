@@ -5,6 +5,7 @@ author: "Joe Post"
 institute: "UCL Centre for Advanced Spatial Analysis"
 date: "2023/01/21"    # (updated: `r Sys.Date()`)"
 output:
+  # output-dir: docs
   xaringan::moon_reader:
     css: xaringan-themer.css
     lib_dir: libs
