@@ -71,9 +71,9 @@ It is the first satellite designed specifically for studying atmospheric CO<sub>
 --
 
 The satellite holds three spectrometers:
-1.    One spectrometer for observation of atmospheric oxygen, with a spectral range between 758-772nm
+1.    One spectrometer for observation of atmospheric oxygen, with a spectral range between 758-772nm (Near Infrared)
 1.    Two spectrometers for observation of CO<sub>2</sub>; the first with a range between 1594-1619nm, and
-1.    the second with a range between 2042-2082nm.
+1.    the second with a range between 2042-2082nm (Short-wavelength Infrared).
 
 --
 
