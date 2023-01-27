@@ -22,11 +22,12 @@ library(readr)
 library(knitr)
 ```
 
-```{r bibliography, include=FALSE}
+```{r setupbibliography, include=FALSE}
 
 # Code supplied by Andy (see wk2 slides 25-28)
 
 library(RefManageR)
+library(knitcitations)
 BibOptions(check.entries = FALSE,
            bib.style = "authoryear",
            cite.style = "authoryear",
@@ -34,7 +35,9 @@ BibOptions(check.entries = FALSE,
            hyperlink = TRUE,
            dashed = FALSE,
            no.print.fields=c("doi", "url", "urldate", "issn"))
-# myBib <- ReadBib("./Bib.bib", check = FALSE)
+myBib <- ReadBib("references.bib",
+                 # "./Bib.bib", 
+                 check = FALSE)
 
 ```
 
@@ -63,7 +66,7 @@ All text under the three question marks are presentation notes; it is hidden fro
 
 OCO-2 stands for **O**rbiting **C**arbon **O**bservatory 2. It was developed by NASA with the objective of providing precise and time-dependent measurements of atmospheric carbon dioxide (CO<sub>2</sub>), across the globe. 
 
-It is the first satellite designed specifically for studying atmospheric CO<sub>2</sub> from space, and therefore also acts to validate the effectiveness of space-based measurement methods (CITATION). 
+It is the first satellite designed specifically for studying atmospheric CO<sub>2</sub> from space, and therefore also acts to validate the effectiveness of space-based measurement methods `r Citep(myBib, "nasaOrbitingCarbonObservatory22023")`. 
 
 --
 
@@ -112,3 +115,12 @@ class: inverse, middle, center
 
 -   Discovery of useful resources: specifically, the European Space Agency's [**eoPortal**](eoportal.org), which provides an encyclopaedia of resources related to satellites, sensors, earth observation missions. 
 
+---
+
+# References
+
+```{r bibliography, results='asis', echo=FALSE, warning=FALSE}
+PrintBibliography(myBib
+                  # , start = 1, end = 7
+                  )
+```
