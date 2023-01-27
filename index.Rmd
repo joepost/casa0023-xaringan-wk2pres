@@ -106,9 +106,9 @@ Why is the OCO-2 important?
 
 How has it been used in research?
 
--   `r Citet(myBib, "anMonitoringAtmosphericCarbon2022")` have tested the applicability of OCO-2 data to analyse patterns of city-scale CO<sub>2</sub> emissions in Pakistan.
+-   `r Citet(myBib, "anMonitoringAtmosphericCarbon2022", .opts = list(max.names=3, longnamesfirst=FALSE))` have tested the applicability of OCO-2 data to analyse patterns of city-scale CO<sub>2</sub> emissions in Pakistan.
 -   `r Citet(myBib, "ciocaEffectsPandemicRestrictions2022")` used OCO-2 data to monitor changes in levels of air pollution in European urban areas following COVID-19 lockdowns.
--   `r Citet(myBib, "nassarAdvancesQuantifyingPower2021")` have compared reported CO<sub>2</sub> emissions from fossil fuel power plants to measurements taken from OCO-2, to estimate reporting error and monitoring gaps. 
+-   `r Citet(myBib, "nassarAdvancesQuantifyingPower2021", .opts = list(max.names=3, longnamesfirst=FALSE))` have compared reported CO<sub>2</sub> emissions from fossil fuel power plants to measurements taken from OCO-2, to estimate reporting error and monitoring gaps. 
 
 ---
 
