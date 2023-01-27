@@ -1,9 +1,9 @@
 ---
-title: "Sentinel-2"
-subtitle: "CASA0023 Remote Sensing: Week 2 Presentation"
+title: "OCO-Who?"
+subtitle: "An introduction to NASA's Orbiting Carbon Observatory-2"
 author: "Joe Post"
 institute: "UCL Centre for Advanced Spatial Analysis"
-date: "2023/01/21"    # (updated: `r Sys.Date()`)"
+# date: "2023/01/21"    # (updated: `r Sys.Date()`)"
 output:
   # output-dir: docs
   xaringan::moon_reader:
@@ -17,6 +17,9 @@ output:
 
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
+library(dplyr)
+library(readr)
+library(knitr)
 ```
 
 ```{r bibliography, include=FALSE}
@@ -38,35 +41,28 @@ BibOptions(check.entries = FALSE,
 ```{r xaringan-themer, include=FALSE, warning=FALSE}
 library(xaringanthemer)
 style_mono_accent(
-  base_color = "#1c5253",
-  header_font_google = google_font("Merriweather Sans"),
-  text_font_google   = google_font("Merriweather", "300", "300i"),
+  base_color = "#fa4b3e",
+  header_font_google = google_font("Poppins"),
+  text_font_google   = google_font("inter", "300", "300i"),
   code_font_google   = google_font("Fira Mono")
 )
 ```
 
 ```{r image, echo=FALSE, out.width='80%', fig.align='center'}
-knitr::include_graphics('casa0023_wk2_xaringan_files/img/Sentinel_2-white.jpg')
+knitr::include_graphics('casa0023_wk2_xaringan_files/img/oco2-space.jpg')
 ```
 
 ???
 
 All text under the three question marks are presentation notes; it is hidden from the presentation slides and only available in presenter mode.
 
----
-class: inverse, center, middle
 
-# Get Started
 ---
 
 # Summary
 
-The Sentinel-2 is ...
+SENTINEL-2 comprises a pair of satellites operated by the European Space Agency (ESA), **2A** and **2B**. The satellites operate passive sensors, relying on reflection of electromagnetic radiation from the sun. 
 
-```{r eval=FALSE, tidy=FALSE}
-# example of visible code
-remotes::install_github("yihui/xaringan")
-```
 
 --
 
@@ -78,107 +74,38 @@ Sub-slide within section 1 (summary)
 
 -   Secondary sub-slide within section 1, continues bullet points
 
---
-
--   Third sub-slide, includes footnote
-
-.footnote\[ \[1\] See [Link](https://github.com/yihui/xaringan/issues/2) for further information\]
-
-------------------------------------------------------------------------
-
-# remark.js
-
-You can see an introduction of remark.js from [its homepage](https://remarkjs.com). You should read the [remark.js Wiki](https://github.com/gnab/remark/wiki) at least once to know how to
-
--   create a new slide (Markdown syntax<sup>\*</sup> and slide properties);
-
--   format a slide (e.g. text alignment);
-
--   configure the slideshow;
-
--   and use the presentation (keyboard shortcuts).
-
-It is important to be familiar with remark.js before you can understand the options in **xaringan**.
-
-.footnote\[\[\*\] It is different with Pandoc's Markdown! It is limited but should be enough for presentation purposes. Come on... You do not need a slide for the Table of Contents! Well, the Markdown support in remark.js [may be improved](https://github.com/gnab/remark/issues/142) in the future.\]
 
 ---
+
+class: inverse, middle, center
+
+```{r infotbl, echo=FALSE, message=FALSE}
+
+infotbl <- readr::read_csv("casa0023_wk2_xaringan_files/sentinel2-stats.csv")
+knitr::kable(infotbl, format = 'html', col.names = c("Dimension", "Value"))
+```
+
+
+---
+
+# Applications
+
+How has the sentinels data been applied in research?
+
+---
+
 class: inverse, middle, center
 
 # Using xaringan
 ---
 
-# remark.js vs xaringan
+# Reflections
 
-Some differences between using remark.js (left) and using **xaringan** (right):
+- What you have learnt in relation to the sensor, its use and how the data might be used in future work
 
-.pull-left\[ 1. Start with a boilerplate HTML file;
-
-1.  Plain Markdown;
-
-2.  Write JavaScript to autoplay slides;
-
-3.  Manually configure MathJax;
-
-4.  Highlight code with `*`;
-
-5.  Edit Markdown source and refresh browser to see updated slides; \]
-
-.pull-right\[ 1. Start with an R Markdown document;
-
-1.  R Markdown (can embed R/other code chunks);
-
-2.  Provide an option `autoplay`;
-
-3.  MathJax just works;<sup>\*</sup>
-
-4.  Highlight code with `{{}}`;
-
-5.  The RStudio addin "Infinite Moon Reader" automatically refreshes slides on changes; \]
-
-.footnote\[\[\*\] Not really. See next page.\]
 
 ------------------------------------------------------------------------
 
-# Math Expressions
-
-You can write LaTeX math expressions inside a pair of dollar signs, e.g. \$\alpha+\beta\$ renders $\alpha+\beta$. You can use the display style with double dollar signs:
-
-    $$\bar{X}=\frac{1}{n}\sum_{i=1}^nX_i$$
-
-$$\bar{X}=\frac{1}{n}\sum_{i=1}^nX_i$$
-
-Limitations:
-
-1.  The source code of a LaTeX math expression must be in one line, unless it is inside a pair of double dollar signs, in which case the starting `$$` must appear in the very beginning of a line, followed immediately by a non-space character, and the ending `$$` must be at the end of a line, led by a non-space character;
-
-2.  There should not be spaces after the opening `$` or before the closing `$`.
-
-3.  Math does not work on the title slide (see [#61](https://github.com/yihui/xaringan/issues/61) for a workaround).
-
-------------------------------------------------------------------------
-
-# R Code
-
-```{r comment='#'}
-# a boring regression
-fit = lm(dist ~ 1 + speed, data = cars)
-coef(summary(fit))
-dojutsu = c('地爆天星', '天照', '加具土命', '神威', '須佐能乎', '無限月読')
-grep('天', dojutsu, value = TRUE)
-```
-
-------------------------------------------------------------------------
-
-# R Plots
-
-```{r cars, fig.height=4, dev='svg'}
-par(mar = c(4, 4, 1, .1))
-plot(cars, pch = 19, col = 'darkgray', las = 1)
-abline(fit, lwd = 2)
-```
-
-------------------------------------------------------------------------
 
 # Tables
 
