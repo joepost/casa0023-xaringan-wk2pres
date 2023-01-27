@@ -104,7 +104,17 @@ Why is the OCO-2 important?
 
 --
 
-How has it been used in research?
+How has it been used?
+
+-   Emissions data from the OCO-2 are open access, for the entire span of the mission (September 2014 onwards), from NASA's [GES DISC](https://disc.gsfc.nasa.gov/datasets?keywords=OCO-2%20v10r&page=1) repository. The data has been pre-processed and corrected. 
+
+-   In 2022 `r Citet(myBib, "weirRegionalImpactsCOVID192021", .opts = list(max.names=3, longnamesfirst=FALSE))` published research that identified  _short-term_, _regional_ changes in atmospheric CO<sub>2</sub>, attributable to human activities. The research combined the high frequency OCO-2 CO<sub>2</sub> data with data and analysis from another NASA tool - the Goddard Earth Observing System (GEOS). 
+
+---
+
+# Applications
+
+How has it been used in urban/cities research?
 
 -   `r Citet(myBib, "anMonitoringAtmosphericCarbon2022", .opts = list(max.names=3, longnamesfirst=FALSE))` have tested the applicability of OCO-2 data to analyse patterns of city-scale CO<sub>2</sub> emissions in Pakistan.
 -   `r Citet(myBib, "ciocaEffectsPandemicRestrictions2022")` used OCO-2 data to monitor changes in levels of air pollution in European urban areas following COVID-19 lockdowns.
@@ -119,13 +129,27 @@ class: inverse, middle, center
 
 # Reflections
 
--   What you have learnt in relation to the sensor, its use and how the data might be used in future work
+Investigating the OCO-2 has been an opportunity to learn more in-depth about the features of satellites and remote sensing principles. 
 
--   Talk about learning specific new features (e.g. sun synchronous, pushbroom, spectral range)
+Points of interest: 
+-   The variety in purpose and capability of different remote sensors. The OCO-2 is one of a suite of NASA satellites released as part of a Climate Continuity Mission, which are designed for the observation of atmospheric gases, clouds, and pollutants - as opposed to the terrestrial surface. 
 
 --
 
--   Discovery of useful resources: specifically, the European Space Agency's [**eoPortal**](eoportal.org), which provides an encyclopaedia of resources related to satellites, sensors, earth observation missions. 
+-   The importance of a satellite's orbit; for example, how a **sun-synchronised orbit (SSO)** means that a satellite always passes over a point on the globe at the same time of day, which allows for meaningful comparisons of change over time.
+
+--
+
+-   Discovery of useful resources - specifically, the European Space Agency's [**eoPortal**](eoportal.org), which provides an encyclopaedia of resources related to satellites, sensors, and earth observation missions. 
+
+---
+
+# Reflections
+
+
+How could the data be used in future work? 
+
+-   As discussed in the **Applications** section, OCO-2 has been used at the city-scale level to track regional emissions patterns, monitoring of power plants, and to assess air pollution for public health. For my own work, I would be interested in researching further how the data can be applied in a climate and health context. It would also be good to explore further the remote sensing data available in the GES DISC repository. 
 
 ---
 
