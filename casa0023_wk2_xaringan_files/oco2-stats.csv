@@ -1,0 +1,12 @@
+Dimension,Value
+Launch date,2nd July 2014
+Orbit type,Sun-synchronous
+Altitude,705 km
+Repeat cycle,16 day
+Type,Passive sensor
+Spectral bands,Near infrared/Short wave infrared (NIR/SWIR)
+Spectral range (sensor 1),758-772 nm
+Spectral range (sensor 2),1594-1619 nm
+Spectral range (sensor 3),2042-2082 nm
+Spectral resolution,0.04 nm
+Technique,Pushbroom

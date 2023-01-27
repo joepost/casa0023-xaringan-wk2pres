@@ -61,14 +61,16 @@ All text under the three question marks are presentation notes; it is hidden fro
 
 # Summary
 
-SENTINEL-2 comprises a pair of satellites operated by the European Space Agency (ESA), **2A** and **2B**. The satellites operate passive sensors, relying on reflection of electromagnetic radiation from the sun. 
+OCO-2 stands for **O**rbiting **C**arbon **O**bservatory 2. It was developed by NASA with the objective of providing precise and time-dependent measurements of atmospheric carbon dioxide (CO<sub>2</sub>), across the globe. 
 
+It is the first satellite designed specifically for studying atmospheric CO<sub>2</sub> from space, and therefore also acts to validate the effectiveness of space-based measurement methods (CITATION). 
 
 --
 
-Sub-slide within section 1 (summary)
-
--   Leads to bullet points
+The satellite holds three spectrometers:
+1.    One spectrometer for observation of atmospheric oxygen, with a spectral range between 758-772nm
+1.    Two spectrometers for observation of CO<sub>2</sub>; the first with a range between 1594-1619nm, and
+1.    the second with a range between 2042-2082nm.
 
 --
 
@@ -81,8 +83,9 @@ class: inverse, middle, center
 
 ```{r infotbl, echo=FALSE, message=FALSE}
 
-infotbl <- readr::read_csv("casa0023_wk2_xaringan_files/sentinel2-stats.csv")
-knitr::kable(infotbl, format = 'html', col.names = c("Dimension", "Value"))
+infotbl <- readr::read_csv("casa0023_wk2_xaringan_files/oco2-stats.csv")
+knitr::kable(infotbl, format = 'html', col.names = c("Dimension", "Value"),
+             caption = "Table 1: Summary of OCO-2 Satellite Features")
 ```
 
 
@@ -96,57 +99,16 @@ How has the sentinels data been applied in research?
 
 class: inverse, middle, center
 
-# Using xaringan
+# So what does it all mean?
 ---
 
 # Reflections
 
-- What you have learnt in relation to the sensor, its use and how the data might be used in future work
+-   What you have learnt in relation to the sensor, its use and how the data might be used in future work
 
+-   Talk about learning specific new features (e.g. sun synchronous, pushbroom, spectral range)
 
-------------------------------------------------------------------------
+--
 
+-   Discovery of useful resources: specifically, the European Space Agency's [**eoPortal**](eoportal.org), which provides an encyclopaedia of resources related to satellites, sensors, earth observation missions. 
 
-# Tables
-
-If you want to generate a table, make sure it is in the HTML format (instead of Markdown or other formats), e.g.,
-
-```{r}
-knitr::kable(head(iris), format = 'html')
-```
-
-------------------------------------------------------------------------
-
-# HTML Widgets
-
-I have not thoroughly tested HTML widgets against **xaringan**. Some may work well, and some may not. It is a little tricky.
-
-Similarly, the Shiny mode (`runtime: shiny`) does not work. I might get these issues fixed in the future, but these are not of high priority to me. I never turn my presentation into a Shiny app. When I need to demonstrate more complicated examples, I just launch them separately. It is convenient to share slides with other people when they are plain HTML/JS applications.
-
-See the next page for two HTML widgets.
-
-------------------------------------------------------------------------
-
-```{r out.width='100%', fig.height=6, eval=require('leaflet')}
-library(leaflet)
-leaflet() %>% addTiles() %>% setView(-93.65, 42.0285, zoom = 17)
-```
-
-------------------------------------------------------------------------
-
-```{r eval=require('DT'), tidy=FALSE}
-DT::datatable(
-  head(iris, 10),
-  fillContainer = FALSE, options = list(pageLength = 8)
-)
-```
-
-------------------------------------------------------------------------
-
-class: center, middle
-
-# Thanks!
-
-Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan).
-
-The chakra comes from [remark.js](https://remarkjs.com), [**knitr**](https://yihui.org/knitr/), and [R Markdown](https://rmarkdown.rstudio.com).
