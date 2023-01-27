@@ -77,7 +77,7 @@ The satellite holds three spectrometers:
 
 --
 
--   Secondary sub-slide within section 1, continues bullet points
+The sensors have been designed to observe very specific ranges of the electromagnetic spectrum where Oxygen and CO<sub>2</sub> absorb light `r Citep(myBib, "europeanspaceagencyOCO2OrbitingCarbon2012")`. 
 
 
 ---
@@ -96,7 +96,19 @@ knitr::kable(infotbl, format = 'html', col.names = c("Dimension", "Value"),
 
 # Applications
 
-How has the sentinels data been applied in research?
+Why is the OCO-2 important?
+
+-   The standard for atmospheric measurement of CO<sub>2</sub> is through ground-based stations around the world. 
+-   However, this leads to large areas of the globe where there is a lack of precise measurement available.
+-   Space-based remote sensing through OCO-2 provides global observations at high frequency, precision and spatial resolution `r Citep(myBib, "europeanspaceagencyOCO2OrbitingCarbon2012")`. 
+
+--
+
+How has it been used in research?
+
+-   `r Citet(myBib, "anMonitoringAtmosphericCarbon2022")` have tested the applicability of OCO-2 data to analyse patterns of city-scale CO<sub>2</sub> emissions in Pakistan.
+-   `r Citet(myBib, "ciocaEffectsPandemicRestrictions2022")` used OCO-2 data to monitor changes in levels of air pollution in European urban areas following COVID-19 lockdowns.
+-   `r Citet(myBib, "nassarAdvancesQuantifyingPower2021")` have compared reported CO<sub>2</sub> emissions from fossil fuel power plants to measurements taken from OCO-2, to estimate reporting error and monitoring gaps. 
 
 ---
 
