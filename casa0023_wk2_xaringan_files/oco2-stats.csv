@@ -8,5 +8,5 @@ Spectral bands,Near infrared/Short wave infrared (NIR/SWIR)
 Spectral range (sensor 1),758-772 nm
 Spectral range (sensor 2),1594-1619 nm
 Spectral range (sensor 3),2042-2082 nm
-Spectral resolution,0.04 nm
+Spatial resolution,1.3km (cross-track); 2.25km (along track)
 Technique,Pushbroom

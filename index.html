@@ -6,6 +6,7 @@
     <meta name="author" content="Joe Post" />
     <script src="libs/header-attrs/header-attrs.js"></script>
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+    <link rel="stylesheet" href="custom.css" type="text/css" />
   </head>
   <body>
     <textarea id="source">
@@ -48,7 +49,9 @@ OCO-2 stands for **O**rbiting **C**arbon **O**bservatory 2. It was developed by 
 
 It is the first satellite designed specifically for studying atmospheric CO&lt;sub&gt;2&lt;/sub&gt; from space, and therefore also acts to validate the effectiveness of space-based measurement methods &lt;a name=cite-nasaOrbitingCarbonObservatory22023&gt;&lt;/a&gt;([NASA, 2023](#bib-nasaOrbitingCarbonObservatory22023)). 
 
---
+---
+
+# Summary
 
 The satellite holds three spectrometers:
 1.    One spectrometer for observation of atmospheric oxygen, with a spectral range between 758-772nm (Near Infrared)
@@ -59,7 +62,11 @@ The satellite holds three spectrometers:
 
 The sensors have been designed to observe very specific ranges of the electromagnetic spectrum where Oxygen and CO&lt;sub&gt;2&lt;/sub&gt; absorb light &lt;a name=cite-europeanspaceagencyOCO2OrbitingCarbon2012&gt;&lt;/a&gt;([European Space Agency, 2012](#bib-europeanspaceagencyOCO2OrbitingCarbon2012)). 
 
+--
 
+&lt;img src="casa0023_wk2_xaringan_files/img/em-spectrum-atmospheric-gases.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+.small[Transmittance of atmospheric gases, from &lt;a name=cite-tempfliPrinciplesRemoteSensing2009&gt;&lt;/a&gt;([Tempfli, Huurneman, Janssen, and Kerle, 2009](#bib-tempfliPrinciplesRemoteSensing2009)p.71)]
 ---
 
 class: inverse, middle, center
@@ -110,8 +117,8 @@ class: inverse, middle, center
    &lt;td style="text-align:left;"&gt; 2042-2082 nm &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Spectral resolution &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; 0.04 nm &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Spatial resolution &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 1.3km (cross-track); 2.25km (along track) &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
    &lt;td style="text-align:left;"&gt; Technique &lt;/td&gt;
@@ -131,9 +138,11 @@ Why is the OCO-2 important?
 -   However, this leads to large areas of the globe where there is a lack of precise measurement available.
 -   Space-based remote sensing through OCO-2 provides global observations at high frequency, precision and spatial resolution ([European Space Agency, 2012](#bib-europeanspaceagencyOCO2OrbitingCarbon2012)). 
 
+--
+
 How has it been used?
 
--   Emissions data from the OCO-2 are open access, for the entire span of the mission (September 2014 onwards), from NASA's [GES DISC](https://disc.gsfc.nasa.gov/datasets?keywords=OCO-2%20v10r&amp;page=1) repository. 
+-   Emissions data from the OCO-2 are open access, for the entire span of the mission (September 2014 onwards), from NASA's [GES DISC](https://disc.gsfc.nasa.gov/datasets?keywords=OCO-2%20v10r&amp;page=1) repository. The data has been pre-processed and corrected. 
 
 -   In 2022 &lt;a name=cite-weirRegionalImpactsCOVID192021&gt;&lt;/a&gt;[Weir, Crisp, O’Dell et al. (2021)](#bib-weirRegionalImpactsCOVID192021) published research that identified  _short-term_, _regional_ changes in atmospheric CO&lt;sub&gt;2&lt;/sub&gt;, attributable to human activities. The research combined the high frequency OCO-2 CO&lt;sub&gt;2&lt;/sub&gt; data with data and analysis from another NASA tool - the Goddard Earth Observing System (GEOS). 
 
@@ -176,7 +185,7 @@ Points of interest:
 
 How could the data be used in future work? 
 
--   As discussed in the **Applications** section, OCO-2 has been used at the city-scale level to track emissions in Pakistan. 
+-   As discussed in the **Applications** section, OCO-2 has been used at the city-scale level to track regional emissions patterns, monitoring of power plants, and to assess air pollution for public health. For my own work, I would be interested in researching further how the data can be applied in a climate and health context. It would also be good to explore further the remote sensing data available in the GES DISC repository. 
 
 ---
 
@@ -206,6 +215,12 @@ Mastrogiacomo, W. Bateman-Hemphill, et
 al.](#cite-nassarAdvancesQuantifyingPower2021) (2021). "Advances in
 Quantifying Power Plant CO2 Emissions with OCO-2". In: _Remote Sensing
 of Environment_ 264.
+
+&lt;a name=bib-tempfliPrinciplesRemoteSensing2009&gt;&lt;/a&gt;[Tempfli, K., G. C.
+Huurneman, L. L. F. Janssen, et al.,
+ed.](#cite-tempfliPrinciplesRemoteSensing2009) (2009). _Principles of
+Remote Sensing : An Introductory Textbook_. International Institute for
+Geo-Information Science and Earth Observation. ISBN: 978-90-6164-270-1.
 
 &lt;a name=bib-weirRegionalImpactsCOVID192021&gt;&lt;/a&gt;[Weir, B., D. Crisp, C.
 W. O’Dell, et al.](#cite-weirRegionalImpactsCOVID192021) (2021).

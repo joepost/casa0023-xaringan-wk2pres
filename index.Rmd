@@ -7,7 +7,7 @@ institute: "UCL Centre for Advanced Spatial Analysis"
 output:
   # output-dir: docs
   xaringan::moon_reader:
-    css: xaringan-themer.css
+    css: ["xaringan-themer.css", "custom.css"]
     lib_dir: libs
     nature:
       highlightStyle: github
@@ -68,7 +68,9 @@ OCO-2 stands for **O**rbiting **C**arbon **O**bservatory 2. It was developed by 
 
 It is the first satellite designed specifically for studying atmospheric CO<sub>2</sub> from space, and therefore also acts to validate the effectiveness of space-based measurement methods `r Citep(myBib, "nasaOrbitingCarbonObservatory22023")`. 
 
---
+---
+
+# Summary
 
 The satellite holds three spectrometers:
 1.    One spectrometer for observation of atmospheric oxygen, with a spectral range between 758-772nm (Near Infrared)
@@ -79,7 +81,13 @@ The satellite holds three spectrometers:
 
 The sensors have been designed to observe very specific ranges of the electromagnetic spectrum where Oxygen and CO<sub>2</sub> absorb light `r Citep(myBib, "europeanspaceagencyOCO2OrbitingCarbon2012")`. 
 
+--
 
+```{r image-emspectrum, echo=FALSE, out.width='80%', fig.align='center'}
+knitr::include_graphics('casa0023_wk2_xaringan_files/img/em-spectrum-atmospheric-gases.png')
+```
+
+.small[Transmittance of atmospheric gases, from `r Citep(myBib, "tempfliPrinciplesRemoteSensing2009", after = ", p.71")`]
 ---
 
 class: inverse, middle, center
