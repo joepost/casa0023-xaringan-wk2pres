@@ -64,22 +64,11 @@ All text under the three question marks are presentation notes; it is hidden fro
 
 # Summary
 
-OCO-2 stands for **O**rbiting **C**arbon **O**bservatory 2. It was developed by NASA with the objective of providing precise and time-dependent measurements of atmospheric carbon dioxide (CO<sub>2</sub>), across the globe. 
-
-It is the first satellite designed specifically for studying atmospheric CO<sub>2</sub> from space, and therefore also acts to validate the effectiveness of space-based measurement methods `r Citep(myBib, "nasaOrbitingCarbonObservatory22023")`. 
-
----
-
-# Summary
-
-The satellite holds three spectrometers:
-1.    One spectrometer for observation of atmospheric oxygen, with a spectral range between 758-772nm (Near Infrared)
-1.    Two spectrometers for observation of CO<sub>2</sub>; the first with a range between 1594-1619nm, and
-1.    the second with a range between 2042-2082nm (Short-wavelength Infrared).
+OCO-2 stands for **O**rbiting **C**arbon **O**bservatory 2. It was developed by NASA with the objective of providing precise and time-dependent measurements of atmospheric carbon dioxide (CO<sub>2</sub>), across the globe. It is the first satellite designed specifically for studying atmospheric CO<sub>2</sub> from space, and therefore also acts to validate the effectiveness of space-based measurement methods `r Citep(myBib, "nasaOrbitingCarbonObservatory22023")`. 
 
 --
 
-The sensors have been designed to observe very specific ranges of the electromagnetic spectrum where Oxygen and CO<sub>2</sub> absorb light `r Citep(myBib, "europeanspaceagencyOCO2OrbitingCarbon2012")`. 
+The satellite holds three spectrometers: One spectrometer for observation of atmospheric oxygen, in the Near Infrared band, and two spectrometers for observation of CO<sub>2</sub>, in the Short-wavelength Infrared band.The sensors have been designed to observe very specific ranges of the electromagnetic spectrum where Oxygen and CO<sub>2</sub> absorb light `r Citep(myBib, "europeanspaceagencyOCO2OrbitingCarbon2012")`. 
 
 --
 
